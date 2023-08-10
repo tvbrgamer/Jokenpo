@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('../font/Anton-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    overflow: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #f4c0c4;
+    background-image: url(../images/fundo.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#topDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border: solid 1px black;
+    background-color: rgb(255, 255, 255);
+}
+
+#containerTop {
+    display: flex;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+#topDiv {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#placar p {
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+}
+
+#user {
+    color: #66d2e0;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+#AI {
+    color: #d78bee;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+#empate {
+    color: #8bee8b;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 400px;
+    width: 800px;
+
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+#mainDiv h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#opcoes {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#pedra,
+#papel,
+#tesoura {
+    background-color: #f7ebd5;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+button {
+    border: solid 1px rgb(0, 0, 0);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+}
+
+.Opt3 {
+    position: relative;
+    height: 200px;
+    width: 198px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-position: center center;
+}
+
+.Opt3 #pedraImg,
+.Opt3 #papelImg,
+.Opt3 #tesouraImg{
+    position: relative;
+    top: 1px;
+    width: 200px;
+    height: 200PX;
+    border-radius: 50px;
+}
+
+#opcoes h4 {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#pedraImg {
+    position: relative;
+    top: -10px;
+    background: url(../images/pedra.png) no-repeat center center;
+    background-size: cover;
+}
+
+#papelImg {
+    position: relative;
+    top: -10px;
+    background: url(../images/papel.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: center top;
+}
+
+#tesouraImg {
+    position: relative;
+    top: -10px;
+    background: url(../images/tesoura.png) no-repeat center center;
+    background-size: cover;
+    background-position: center -25px;
+}
+
+#opcao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    width: 160px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: white;
+}
+
+#reset,
+#voltar {
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #fecbc5;
+    border: solid 1px black;
+}

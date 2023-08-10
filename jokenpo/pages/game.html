@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Game</title>
+
+    <link rel="stylesheet" href="../css/game.css">
+
+    <script defer src="../js/game.js"></script>
+
+</head>
+
+<body onload="imprime();">
+
+    <div id="container">
+
+        <div id="containerTop">
+
+                <div class="Opt3" id="userChoice">
+                    <div id="nada">
+                    </div>
+                </div>
+
+            <div id="topDiv">
+                <div id="username">
+                    <h3 id="player-title">Player:</h3>
+                    <h3 id="player-name"></h3>
+
+                </div>
+
+                <div id="placar">
+                    <p id="score"> <span id="user">0</span> X <span id="AI">0</span></p>
+                    <h3>Empate:</h3>
+                    <p id="empate">0</p>
+                </div>
+            </div>
+
+            <div class="Opt3" id="AIChoice">
+                <div id="nada">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="mainDiv">
+
+            <div id="Title">
+                <h1>Jokenpo</h1>
+
+                <h3>Escolha uma opção:</h3>
+            </div>
+
+            <div id="opcoes">
+
+                <div id="pedra" onclick="escolhaOpcao(0)">
+                    <div class="Opt3" id="pedraImg"></div>
+                    <div class="nomeOpt">
+                        <h4>Pedra</h4>
+                    </div>
+                </div>
+
+                <div id="papel" onclick="escolhaOpcao(1)">
+                    <div class="Opt3" id="papelImg"></div>
+                    <div class="nomeOpt">
+                        <h4>Papel</h4>
+                    </div>
+                </div>
+
+                <div id="tesoura" onclick="escolhaOpcao(2)">
+                    <div class="Opt3" id="tesouraImg"></div>
+                    <div class="nomeOpt">
+                        <h4>Tesoura</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="opcao">
+            <button id="voltar" onclick="voltar()">Voltar</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
